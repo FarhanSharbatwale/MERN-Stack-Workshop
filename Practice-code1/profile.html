@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+</head>
+
+<body>
+    <button id="openOverlay" onclick="showOverlay()">open overlay</button>
+    <div class="overlay" id="overlay">
+        <div class="main">
+            <button id="backbtn" onclick="hideOverlay()">Back</button>
+            <p>Overlay open</p>
+            <input type="text" placeholder="Enter details">
+            <input type="text" placeholder="Enter details">
+            <input type="text" placeholder="Enter details">
+            <button id="login">Login</button>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("openOverlay")
+        function showOverlay(){
+            const overlay = document.getElementById("overlay")
+            overlay.style.display = "flex"
+        }
+
+        function hideOverlay(){
+            const overlay = document.getElementById("overlay")
+            overlay.style.display = "none"
+        }
+    </script>
+
+</body>
+
+</html>
